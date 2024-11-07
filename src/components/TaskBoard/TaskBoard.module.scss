@@ -1,0 +1,55 @@
+.board {
+  background: #f7f9fc; // Легкий фон
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #ebebeb;
+  border-radius: 20px;
+  overflow-y: auto;
+
+  /* Стилизация скролла */
+  &::-webkit-scrollbar {
+    width: 8px; /* Ширина скролла */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888; /* Цвет ползунка */
+    border-radius: 4px; /* Закругление углов */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Цвет фона полосы прокрутки */
+    border-radius: 4px; /* Закругление углов */
+  }
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333; // Темный цвет текста
+}
+
+.taskGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; // Пробелы между группами задач
+}
+.createTaskButton {
+  background-color: #4caf50; // Зеленый фон
+  color: white; // Белый текст
+  border: none; // Убираем рамку
+  border-radius: 4px; // Скругленные углы
+  padding: 10px 15px; // Отступы внутри кнопки
+  font-size: 16px; // Размер шрифта
+  cursor: pointer; // Курсор указателя
+  margin-bottom: 15px; // Отступ снизу
+  transition: background-color 0.3s; // Плавный переход цвета
+
+  &:hover {
+    background-color: #45a049; // Цвет фона при наведении
+  }
+}

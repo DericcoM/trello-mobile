@@ -1,0 +1,93 @@
+.recorderContainer {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.recordStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashingButton {
+  width: 10px; /* Set width to 9px */
+  height: 10px; /* Set height to 9px */
+  background-color: #cc3939; /* Set background color */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  color: #000; /* Text color, if needed */
+  animation: flash 1s infinite; /* Flash animation */
+  margin-right: 4px;
+}
+
+.timerRecord {
+  color: #000;
+  font-size: 16px;
+  line-height: 20.8px;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+}
+
+.textRecord {
+  font-size: 16px;
+  line-height: 20.8px;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+}
+
+.recognizeButton {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  background: rgba(10, 128, 240, 0.773);
+  width: 46px;
+  height: 46px;
+
+  @media (max-width: 1024px) {
+    width: 42px;
+    height: 42px;
+  }
+
+  &:hover {
+    background: #244869c5;
+  }
+
+  &:active {
+    background: #244869c5;
+  }
+}
+
+.chatContainerSendButton {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &.hidden {
+    background-color: #ddd;
+  }
+}
+
+.circleMicrophone {
+  background: url("../../assets/images/Voice.svg") no-repeat center; /* Icon background */
+  width: 25px; /* Button width */
+  height: 25px; /* Button height */
+  border-radius: 50%; /* Make it circular */
+  transition: transform 0.3s ease; /* Smooth transition for scale */
+}

@@ -1,0 +1,23 @@
+// src/components/LoginForm/LoginForm.module.scss
+.loginContainer {
+    position: relative; // Устанавливаем позицию для управления перемещением
+    transition: transform 0.3s ease; // Плавный переход для трансформации
+  
+    &.keyboardVisible {
+      transform: translateY(-100px); // Перемещаем контейнер вверх, когда клавиатура открыта
+    }
+  }
+
+.loginCard {
+    margin: auto; // Центрируем карточку
+    max-width: 400px; // Ограничиваем ширину карточки
+    width: 100%; // Делаем карточку адаптивной
+  }
+  
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #40a9ff; // A lighter blue for hover effect
+}

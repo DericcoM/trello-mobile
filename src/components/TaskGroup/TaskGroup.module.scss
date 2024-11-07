@@ -1,0 +1,32 @@
+.panel {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: rgba(10, 128, 240, 0.773)
+}
+
+.panel .ant-collapse-header {
+  background-color: #1890ff; /* Цвет заголовка */
+  color: white; /* Цвет текста заголовка */
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.panel .ant-collapse-content {
+  background-color: #f0f0f0; /* Цвет фона содержимого */
+  border: 1px solid #e0e0e0; /* Граница содержимого */
+  border-radius: 4px;
+}
+
+.dropArea {
+  min-height: 100px; /* Минимальная высота области для перетаскивания */
+  padding: 16px;
+  border: 2px dashed #a1a0a0; /* Дашная граница области для перетаскивания */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dropArea.over {
+  background-color: #d9f7be; /* Цвет области при наведении */
+}
+

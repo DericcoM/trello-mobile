@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "target": "esnext", // Обновлено для использования последней версии JavaScript
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src", // Установить базовый URL для разрешения модулей
+    "paths": {
+      "@/*": ["*"] // Установка алиасов для удобного импорта
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules", // Явное исключение каталога node_modules
+    "**/*.spec.ts",  // Исключение тестов, если они есть
+    "**/*.test.tsx"
+  ]
+}

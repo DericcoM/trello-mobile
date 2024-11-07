@@ -1,0 +1,22 @@
+// src/App.module.scss
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Full viewport height
+  transition: background-color 0.3s ease;
+  padding: 0 10px;
+  background: #ebebeb;
+  overflow-y: hidden;
+}
+
+.app.login {
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    #6a11cb,
+    #2575fc
+  ); // Background gradient for taskboard
+}
+

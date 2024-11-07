@@ -1,0 +1,176 @@
+.fullScreenContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Цвет фона */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #1890ff; /* Цвет для кнопки закрытия */
+  font-weight: bold;
+}
+
+/* Стили для вкладок */
+.ant-tabs {
+  width: 100%; /* Убедитесь, что вкладки занимают 100% ширины */
+}
+
+.ant-tabs-nav-wrap {
+  justify-content: center !important; /* Разделение вкладок по ширине */
+}
+
+.ant-tabs-tab {
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+  flex: 1; /* Вкладки занимают равные размеры */
+}
+
+.taskDetailCard {
+  width: 400px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.infoBlock {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.priority {
+  &.low {
+    background-color: #d9f7be; // Цвет для низкого приоритета
+  }
+  &.medium {
+    background-color: #ffe58f; // Цвет для среднего приоритета
+  }
+  &.high {
+    background-color: #ffccc7; // Цвет для высокого приоритета
+  }
+}
+
+.type {
+  &.feature {
+    background-color: #e6f7ff; // Цвет для типа "feature"
+  }
+  &.bug {
+    background-color: #fffbe6; // Цвет для типа "bug"
+  }
+  &.task {
+    background-color: #fff0f6; // Цвет для типа "task"
+  }
+}
+// TaskDetail.module.scss
+
+.fullScreenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; // Ensure the modal is on top
+}
+
+.taskDetailCard {
+  background-color: #fff;
+  width: 600px; // Set your desired width
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; // Prevent overflow of content
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px; // Set a maximum height for the chat
+  overflow-y: auto; // Enable vertical scrolling if content overflows
+  padding: 10px; // Add padding for better aesthetics
+  background-color: #f9f9f9; // Optional: Light background for chat container
+}
+
+// TaskDetail.module.scss
+
+.chatMessage {
+  max-width: 60%; // Limit the width of chat messages
+  margin: 5px 0; // Space between messages
+  padding: 10px; // Padding inside each message
+  border-radius: 10px; // Rounded corners for messages
+  position: relative; // For potential future adjustments
+  color: #333; // Darker text color for visibility
+  overflow-wrap: break-word; // Allows long words to be broken and wrapped
+  word-wrap: break-word; // Ensures word wrapping works in all browsers
+  white-space: pre-wrap; // Preserves whitespace and allows wrapping
+  line-height: 1.4; // Line height for better readability
+}
+
+.chatText {
+  display: block; // Ensure text is treated as a block element
+  overflow: hidden; // Prevent overflow
+  text-overflow: ellipsis; // Show ellipsis if text is too long
+}
+
+
+.sent {
+  align-self: flex-end; // Align sent messages to the right
+  background-color: #d9f7be; // Light green for sent messages
+}
+
+.received {
+  align-self: flex-start; // Align received messages to the left
+  background-color: #e6f7ff; // Light blue for received messages
+}
+
+.chatSender {
+  font-size: 12px; // Smaller font for sender name
+  color: #888; // Light grey color for sender name
+  margin-top: 5px; // Space between message text and sender name
+  text-align: right; // Align sender name to the right
+}
+
+.loadingContainer {
+  display: flex; // Center the loading spinner
+  justify-content: center;
+  align-items: center;
+  height: 100px; // Height for loading state
+}
+
+.noMessages {
+  text-align: center; // Center the message for no chat
+  font-size: 16px; // Font size for no messages text
+  color: #888; // Light grey color
+}
+
+.infoContainer {
+  padding: 10px; // Padding around the info container
+}
+
+.infoBlock {
+  margin-bottom: 10px; // Space between info blocks
+  padding: 8px; // Padding inside info blocks
+  border-radius: 4px; // Rounded corners for info blocks
+  color: #333; // Text color for info blocks
+}
